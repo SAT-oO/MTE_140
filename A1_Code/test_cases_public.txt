@@ -1,0 +1,14 @@
+# Test 1: reverse_k_group
+Input: 1 2 3 4 5
+Function: reverseKGroup(2)
+Expected Output: 2 1 4 3 5
+
+# Test 2: detect_loop
+Input: 1 2 3 4 5 (no loop)
+Function: detectLoop()
+Expected Output: false
+
+# Test 3: reorder_odd_even
+Input: 1 2 3 4 5
+Function: reorderOddEven()
+Expected Output: 1 3 5 2 4

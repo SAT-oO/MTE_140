@@ -1,0 +1,7 @@
+{
+    "editor.formatOnSave": true,
+    "clang-format.executable": "/usr/local/bin/clang-format",
+    "cmake.sourceDirectory": "${workspaceFolder}",
+    "cmake.cmakePath": "/usr/bin/cmake",
+    "C_Cpp.default.compilerPath": "/usr/bin/clang"
+}
