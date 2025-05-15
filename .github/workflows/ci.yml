@@ -1,0 +1,21 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build and test
+      run: |
+        # your build and test commands here
+        g++ -std=c++17 *.cpp -o main
+        ./main
