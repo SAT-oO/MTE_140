@@ -12,3 +12,8 @@ Requires 2 approves to be merged into main.
 
 @file org
 under 'src/assignments' are all the assignment stuff. Please only change those files.
+
+@branch naming
+assignment#--name 
+eg. assignment1--tina 
+
