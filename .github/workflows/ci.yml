@@ -20,6 +20,7 @@ jobs:
 
     - name: Build and test
       run: |
-        g++ -std=c++17 ./*.cpp -o main
+        g++ -std=c++17 src/assignments/*.cpp -o main
+
 
         
