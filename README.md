@@ -17,3 +17,5 @@ under 'src/assignments' are all the assignment stuff. Please only change those f
 assignment#--name 
 eg. assignment1--tina 
 
+@note 
+You can use fff for unit tests if you want to test math stuff. I have not set it up yet but just in case. This should build locally but its not a part of the pipeline. 
