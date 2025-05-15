@@ -1,0 +1,12 @@
+{
+  "name": "my-dev-env",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "mounts": [
+    "source=/Users/sat-oo/.ssh/known_hosts,target=/root/.ssh/known_hosts,type=bind,consistency=cached"
+  ],
+  "extensions": [
+    "ms-vscode.cpptools-extension-pack"
+  ]
+}
