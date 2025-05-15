@@ -12,7 +12,6 @@ void printList(const vector<int>& list) {
 int main() {
     cout << unitbuf;
 
-    cout<<"start of program"<<endl;
     LinkedList ll;
     for (int i = 1; i <= 5; ++i) ll.insert(i);
 
