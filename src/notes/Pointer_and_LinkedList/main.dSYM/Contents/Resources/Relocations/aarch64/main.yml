@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/sat-oo/Documents/vscode/MTE_140/Pointer_and_LinkedList/main'
+relocations:     []
+...
