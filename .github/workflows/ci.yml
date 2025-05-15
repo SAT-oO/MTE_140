@@ -13,9 +13,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - name: Checkout this repo
+      uses: actions/checkout@v4
+      with:
+        submodules: false
+
     - name: Build and test
       run: |
-        # your build and test commands here
-        g++ -std=c++17 *.cpp -o main
-        ./main
+        g++ -std=c++17 $(find src/assignments -name main.cpp) -o main
+
+
+
+        
