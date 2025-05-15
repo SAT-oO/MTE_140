@@ -20,7 +20,8 @@ jobs:
 
     - name: Build and test
       run: |
-        g++ -std=c++17 src/assignments/*.cpp -o main
+        g++ -std=c++17 $(find src/assignments -name '*.cpp') -o main
+
 
 
         
