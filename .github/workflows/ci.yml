@@ -16,7 +16,7 @@ jobs:
     - name: Checkout this repo
       uses: actions/checkout@v4
       with:
-        submodules: true
+        submodules: false
 
     - name: Build and test
       run: |
