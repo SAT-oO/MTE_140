@@ -160,4 +160,22 @@ bool LinkedList::detectLoop() {
 
 void LinkedList::reorderOddEven() {
   // Reorder the list with odd-positioned nodes before even-positioned ones
+  if((head == nullptr) || (head->next == nullptr)) return;
+  
+  Node *even_head = head->next;
+
+  Node *curr1 = head;
+  Node *curr2 = head->next;
+
+  while((curr1->next != nullptr) && (curr2->next != nullptr)){
+    curr1->next = curr2->next;
+    curr1 = curr1->next;
+    curr2->next = curr1->next;
+    curr2 = curr2->next;
+  }
+    
+  curr1->next = even_head;
+
+  
+
 }
