@@ -127,7 +127,7 @@ void LinkedList::reverseKGroup(int k) {
     curr_end = prev_end->next;
     
   }
-  // update variables
+  
 }
 
 bool LinkedList::detectLoop() {
