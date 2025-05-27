@@ -1,7 +1,14 @@
 {
     "editor.formatOnSave": true,
-    "clang-format.executable": "/usr/local/bin/clang-format",
+    "clang-format.executable": "/usr/bin/clang-format",
     "cmake.sourceDirectory": "${workspaceFolder}",
     "cmake.cmakePath": "/usr/bin/cmake",
-    "C_Cpp.default.compilerPath": "/usr/bin/clang"
+    "C_Cpp.default.compilerPath": "/usr/bin/clang",
+    "editor.inlineSuggest.suppressSuggestions": true,
+    "editor.quickSuggestions": {
+        "other": "off"
+    },
+    "editor.snippetSuggestions": "none",
+    "editor.quickSuggestionsDelay": 1000,
+    "C_Cpp.intelliSenseEngine": "disabled"
 }
