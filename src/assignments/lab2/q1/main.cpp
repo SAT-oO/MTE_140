@@ -10,7 +10,7 @@
 #include <vector>
 using namespace std;
 
-int arr[100000][100000] = { 0 };
+int arr[10][10] = { 0 };
 
 int size_max = 0;
 
