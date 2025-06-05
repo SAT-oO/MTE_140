@@ -20,7 +20,7 @@ jobs:
 
     - name: Build and test
       run: |
-        g++ -std=c++17 $(find src/assignments -name main.cpp) -o main
+        g++ -std=c++17 $(find src/assignments/A2_Code -name main.cpp) -o main
 
 
 
