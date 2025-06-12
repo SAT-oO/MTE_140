@@ -72,16 +72,16 @@ Make sure you have the following installed:
 
 2. 🖥️ **Open in VS Code**
 
-Launch **Visual Studio Code** and open the cloned folder.
+    Launch **Visual Studio Code** and open the cloned folder.
 
 
 3.  🔄 **Reopen in Container**
 
-Press `F1` (or `Cmd+Shift+P` on macOS), then run:
+    Press `F1` (or `Cmd+Shift+P` on macOS), then run:
 
-    Dev Containers: Reopen in Container
+        Dev Containers: Reopen in Container
 
 
-VS Code will automatically build the image using the `.devcontainer/devcontainer.json` file and start the container environment.
+    VS Code will automatically build the image using the `.devcontainer/devcontainer.json` file and start the container environment.
 
 
