@@ -41,7 +41,7 @@ All assignment code files should be placed under the `src/assignments/` director
 - [ ] Branch follows naming convention
 - [ ] Code builds and runs locally or containerized environment 
 
----
+
 
 # 🚀 Steps to Set Up Docker Container
 
