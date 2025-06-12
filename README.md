@@ -2,7 +2,6 @@
 
 This repository is created for **MTE 140** assignments and related resources.
 
----
 
 ## 📂 Repository Structure
 
@@ -14,7 +13,6 @@ find . -print | sed -e 's;[^/]*/;│   ;g;s;│   \([^│]\);├── \1;'
 
 All assignment code files should be placed under the `src/assignments/` directory. **Do not modify files outside of this directory** unless explicitly instructed.
 
----
 
 ## 🛠️ Development Guidelines
 
@@ -22,7 +20,6 @@ All assignment code files should be placed under the `src/assignments/` director
 - The compiled file **must be named `main.cpp`** for proper pipeline validation.
 - You may use the [fff](https://github.com/meekrosoft/fff) framework for unit testing (especially useful for math logic), although it is **not** integrated into the pipeline yet.
 
----
 
 ### 🌿 Branching Strategy
 - Create your own feature branch for each assignment using the following naming convention:
@@ -31,13 +28,11 @@ All assignment code files should be placed under the `src/assignments/` director
 2. lab questions/practice questions: lab# -- name
     - example: lab2 -- bob
 
----
 
 ### ✅ Pull Request Rules
 - Always open a Pull Request (PR) to merge changes into `main`.
 - Each PR **requires 2 approvals** before it can be merged.
 
----
 
 ## ✅ Quick Checklist Before PR
 
@@ -46,7 +41,7 @@ All assignment code files should be placed under the `src/assignments/` director
 - [ ] Branch follows naming convention
 - [ ] Code builds and runs locally or containerized environment 
 
---- 
+--
 
 # 🚀 Steps to Set Up Docker Container
 
@@ -54,7 +49,6 @@ All assignment code files should be placed under the `src/assignments/` director
 
 Follow these steps to build and open the development container using **Visual Studio Code Dev Containers**:
 
----
 
 ### 🔧 Prerequisites
 
@@ -64,7 +58,6 @@ Make sure you have the following installed:
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Remote - Containers Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
----
 
 ### 🚀 Getting Started
 
@@ -79,7 +72,6 @@ Make sure you have the following installed:
 
 Launch **Visual Studio Code** and open the cloned folder.
 
----
 
 3.  🔄 **Reopen in Container**
 
