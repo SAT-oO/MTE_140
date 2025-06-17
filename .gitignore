@@ -12,3 +12,4 @@ build
 .mxproject
 mx.scratch
 googletest/
+build/
