@@ -67,7 +67,7 @@ Make sure you have the following installed:
 
    ```bash
    git clone https://github.com/SAT-oO/MTE_140.git
-   cd your-repo-name
+   cd MTE_140
    ``` 
 
 2. 🖥️ **Open in VS Code**
