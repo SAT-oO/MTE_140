@@ -8,8 +8,8 @@ Release
 *.o
 .settings
 .DS_Store
-build
+build/
 .mxproject
 mx.scratch
 googletest/
-build/
+build 
