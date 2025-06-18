@@ -13,6 +13,7 @@ using namespace std;
 int arr[10][10] = {0};
 
 int size_max = 0;
+int counter = 0;
 
 bool checkSafe(int row, int col) {
 	// check each col and diagnonal
@@ -43,37 +44,38 @@ bool checkSafe(int row, int col) {
 }
 
 void dfs(int n) {
-	// iterate through each row, current point is [n][col]
-	for (int col = 0; col < n; col++) {
-		// if finished, print the board and return
-		if (n == 0) {
-			for (int j = 0; j < n; j++) {
-				for (int k = 0; k < n; k++) {
-					cout << arr[j][k] << " ";
-				}
-				cout << endl;
+	// base case
+	if (n <= 0) {
+		for (int j = 0; j < size_max; j++) {
+			for (int k = 0; k < size_max; k++) {
+				cout << arr[j][k] << " ";
 			}
 			cout << endl;
-			return;
 		}
+		cout << endl;
+		counter++;
+		return;
+	}
 
-		// if not safe, continue
-		if (!checkSafe(n, col)) {
+	for (int col = 0; col < size_max; col++) {
+		// check if step
+		if (!checkSafe(size_max-n, col)) {
 			continue;
 		}
 
-		// safe
-		arr[n][col] = 1;
+		// place queen and step to next row
+		arr[size_max - n][col] = 1;
 		dfs(n - 1);
-		arr[n][col] = 0;
+		arr[size_max - n][col] = 0; // unmark the row after dfs call
 	}
 }
 
 int main() {
 	int n;
+	cout << "Enter the number of queens: ";
 	cin >> n;
 	size_max = n;
-
 	dfs(n);
+	cout<< "Total solutions: " << counter << endl;
 	return 0;
 }
