@@ -125,23 +125,43 @@ void Queue::print() {
 // ---------------- Part B: Customer Service Desk ----------------
 
 static Queue *desk = nullptr;
-static int arrivalTimeMap[1001]; // arrivalTimeMap[ID] = arrivalTime
+static int arrivalTimeMap[1001] = {0}; // arrivalTimeMap[ID] = arrivalTime
 
 void addCustomer(int customerID, int arrivalTime) {
-	// TODO: Enqueue customerID into desk and record arrivalTimeMap[customerID].
-	// TODO: Print confirmation message.
+	// Enqueue customerID into desk and record arrivalTimeMap[customerID].
+	desk->enqueue(customerID);
+	arrivalTimeMap[customerID] = arrivalTime;
+
+	// Print confirmation message.
+	cout<< "Customer " << customerID << " added at time " << arrivalTime << "." << endl;
 }
 
 void serveNext(int currentTime) {
 	// TODO: Dequeue next customer from desk (if any), compute wait = currentTime − arrivalTime, and
+	int waitTime = currentTime - arrivalTimeMap[desk->peek()];
+	
 	// print service message.
+	cout<< "Served customer " << desk->peek() << " at time " << currentTime 
+	    << ". Wait time was " << waitTime << " minutes." << endl;
+
+	desk->dequeue();
 }
 
 double averageWaitTime(int currentTime) {
 	// TODO: If desk is empty, return 0.0.
+	if(desk->getSize() == 0) {
+		return 0.0;
+	}
 	// TODO: Otherwise, sum (currentTime − arrivalTime) for each waiting customer and return the
 	// average.
-	return 0.0; // placeholder
+	double totalWaitTime = 0;
+	
+	for(int i = 0;i < desk->getSize(); i++){
+		int currCustomer = desk->dequeue();
+		totalWaitTime += currentTime - arrivalTimeMap[currCustomer];
+		desk->enqueue(currCustomer);
+	}
+	return totalWaitTime / desk->getSize();
 }
 
 int main() {
