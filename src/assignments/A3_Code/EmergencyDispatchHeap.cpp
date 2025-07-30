@@ -145,15 +145,13 @@ void MinHeap::ReheapDown(int index) {
     }
 }
 
-void MinHeap::updateWaitTimes() {
+void MinHeap::updateWaitTimes(){
     // TODO: Increment waitTime for all calls, update priorities
 
     // 1. increment wait times
     for (int i = 1; i <= size; i++) {
         elements[i].waitTime++;
-
     }
-
     // 2. reheapify 
     ReheapDown(1);
 

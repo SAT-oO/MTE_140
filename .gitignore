@@ -13,3 +13,5 @@ build/
 mx.scratch
 googletest/
 build 
+.DS_Store
+.vscode/

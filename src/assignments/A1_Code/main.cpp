@@ -41,6 +41,7 @@ int main() {
 		temp = temp->next;
 	}
 	temp->next = ll3.head->next->next; // loop from last to 3rd node
+	
 	cout << "Loop detected: " << (ll3.detectLoop() ? "Yes" : "No") << endl;
 
 	return 0;
